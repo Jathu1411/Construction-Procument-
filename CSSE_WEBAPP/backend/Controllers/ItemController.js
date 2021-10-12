@@ -11,7 +11,7 @@ const GetItem = async (req, res) => {
 // CRUD - Create Items
 const createItem = async (req, res) => {
   if (req.body) {
-    const item = Item(req.body);
+    const item = new Item(req.body);
     await item
       .save()
       .then((data) => {
