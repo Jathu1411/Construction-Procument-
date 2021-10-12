@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const staffApi = require("./Routes/StaffRoute");
+const adminRouter = require('./routes/adminRouter');
 dotenv.config();
 const app = express();
 app.use(cors());
@@ -32,3 +33,4 @@ app.listen(PORT, () => {
 });
 
 app.use("/staff", staffApi);
+app.use("/api", adminRouter);
