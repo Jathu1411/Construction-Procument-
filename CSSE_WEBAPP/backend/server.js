@@ -3,7 +3,10 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+//Routers
 const staffApi = require("./Routes/StaffRoute");
+const ItemApi = require("./Routes/ItemRoute");
+
 dotenv.config();
 const app = express();
 app.use(cors());
@@ -28,7 +31,8 @@ mongoose.connection.once("open", () => {
 });
 
 app.listen(PORT, () => {
-  console.log(`DB is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
 
 app.use("/staff", staffApi);
+app.use("/item", ItemApi);
