@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    android:background="@drawable/ash_color_background"
+    app:cardElevation="3dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/cname"
+            android:layout_width="371dp"
+            android:layout_height="24dp"
+            android:fontFamily="@font/gilroy"
+            android:text="Name"
+            android:textColor="#04838a"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/refno"
+            android:layout_width="370dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/gilroy"
+            android:text="Ref No"
+            android:textColor="#a9a9a9"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cname" />
+
+        <TextView
+            android:id="@+id/product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/gilroy"
+            android:text="Product"
+            android:textColor="#a9a9a9"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/refno" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/product"
+            android:fontFamily="@font/gilroy"
+            android:text="qty"
+            android:textColor="#a9a9a9"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product" />
+
+        <TextView
+            android:id="@+id/dis"
+            android:layout_width="371dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/product"
+            android:fontFamily="@font/gilroy"
+            android:text="Description"
+            android:textColor="#a9a9a9"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qty" />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:background="#04838a"
+            android:shadowRadius="10"
+            android:text="Confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/dis"
+            app:layout_constraintTop_toBottomOf="@+id/dis" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

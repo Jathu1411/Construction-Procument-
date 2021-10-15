@@ -1,0 +1,253 @@
+body {
+    background-image: url("bbblu.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    min-height: 700px;
+}
+.registerbtn
+{
+    height: 55px;
+    width: 100%;
+    background-color: #04adb6;
+    border: none;
+
+}
+.registerbtn:hover
+{
+    background-color: #494d4dd5;
+    border: none;
+}
+#container
+{
+
+
+}
+.logo
+{
+    width: 60px;
+    height: 60px;
+}
+.navLinkColor
+{
+
+    font-size: 14px;
+    font-family: Arial;
+    background: rgba(255,255,255,0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+.navLinkColor:hover
+{
+    color: white;
+    background: rgba(0,0,0,0.7);
+
+}
+.navbarcolor
+{
+    background-color: #b6b7b8;
+    /*opacity: 0.5;*/
+    /*background: rgba(0,0,0,0.5);*/
+    /*background-color: #e25c2d;*/
+}
+.input
+{
+    height: 45px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F1F1F1;
+    font-family: Arial;
+    font-size: 14px;
+}
+.inputfirst
+{
+    height: 45px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    background-color: #F1F1F1;
+    font-family: Arial;
+    font-size: 14px;
+}
+#register_root
+{
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255,0.7);
+    border-radius: 30px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+}
+.register_image
+{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.register_btn_container
+{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+#login_root
+{
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255,255,255,0.7);
+    border-radius: 30px;
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+
+}
+.inputfirstlogin
+{
+    height: 45px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+    background-color: #F1F1F1;
+    font-family: Arial;
+    font-size: 14px;
+}
+.loginbtn
+{
+    height: 55px;
+    width: 100%;
+    background-color: #04adb6;
+    margin-top: 20px;
+    border: none;
+    font-family: Arial;
+
+}
+.loginbtn:hover
+{
+    background-color: #494d4dd5;
+    border: none;
+}
+.orders_container
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 60%;
+}
+.orders_contai
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.order_edit_update_btn
+{
+    width: 100px;
+}
+.card_body
+{
+    border-radius: 15px;
+    height: auto;
+}
+.order_p_below
+{
+    margin-top: -10px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid  #04adb6;
+    border-bottom: 16px solid  #04adb6;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.loading_screen
+{
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.add_suppliers_btn
+{
+    float: right;
+    margin-right: 20px;
+    background-color: #04adb6;
+}
+.add_product_first_input
+{
+    margin-top: 30px;
+}
+.productImage
+{
+    width: 100%;
+    height: 100%;
+    max-height: 320px;
+    min-height: 320px;
+    border-radius: 10px;
+
+}
+.supplierImage
+{
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    min-height: 250px;
+    border-radius: 10px;
+
+}
+.card_bodyy
+{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card_container
+{
+    height: auto;
+    margin-bottom: 5px;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.drop_down
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+}
+.order_div
+{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.approve_btn
+{
+    /*float: right;*/
+}
+.card_con
+{
+    border-radius: 10px;
+}
