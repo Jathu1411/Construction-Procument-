@@ -30,12 +30,12 @@ const Login = (props) => {
 
         onSubmit: (data) => {
             
-            axios.post('http://localhost:5000/api/login',data)
+            axios.post('http://localhost:8095/api/login',data)
             .then( res => {
                 toast.success("login sucessfully");
                 localStorage.setItem('auth',JSON.stringify(res.data));
              
-               props.history.push('./Home');
+               props.history.push('./item');
                 
                
             })

@@ -3,12 +3,17 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const morgan = require('morgan');
+//Routers
 const staffApi = require("./Routes/StaffRoute");
-const adminRouter = require('./routes/adminRouter');
+const adminRouter = require('./Routes/adminRouter');
+const ItemApi = require("./Routes/ItemRoute");
+
 dotenv.config();
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+app.use(morgan('dev'));
 const PORT = process.env.PORT || 8095;
 const MONGODB_URI = process.env.MONGODB_URI;
 mongoose.connect(
@@ -29,8 +34,9 @@ mongoose.connection.once("open", () => {
 });
 
 app.listen(PORT, () => {
-  console.log(`DB is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
 
-app.use("/staff", staffApi);
-app.use("/api", adminRouter);
+app.use("/staff", staffApi());
+app.use('/api', adminRouter);
+app.use("/item", ItemApi());

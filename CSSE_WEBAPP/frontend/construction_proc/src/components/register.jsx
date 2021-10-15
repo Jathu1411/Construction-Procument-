@@ -39,7 +39,7 @@ const Register = (props) => {
 
         onSubmit: (data) => {
             console.log(data);
-            axios.post('http://localhost:5000/api/register',data)
+            axios.post('http://localhost:8095/api/register',data)
             .then( res => {
                 toast.success("Registered sucessfully");
                 props.history.push('./login');
